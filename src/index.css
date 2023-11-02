@@ -1,0 +1,662 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background:  #F7ECDC;
+  display: flex;
+  
+}
+.SideBar{
+  background: white;
+  height: 100vh;
+  width: 25%;
+  position: relative;
+}
+
+.pN{
+  margin-top: 20px;
+  margin-left: 20px;
+font-size: 25px;
+font-weight: 550;
+line-height: 27px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.btn{
+  position: absolute;
+  cursor: pointer;
+  width: 313px;
+height: 51px;
+top: 97px;
+left: 30px;
+border-radius: 50px;
+
+font-family: Roboto;
+font-size: 27px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #FFFFFF;
+background: #000000;
+
+}
+.plus{
+ font-size: 31px; 
+font-weight: 700;
+}
+
+
+.DisplayBar{
+  height: 100vh;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:  #F7ECDC; 
+  position: relative;
+}
+.image{
+  position: absolute;
+  width: 556px;
+height: 313px;
+top: 80px;
+left: 350px;
+
+}
+.Pck{
+  position: absolute;
+  width: 310px;
+height: 39px;
+top: 380px;
+left: 530px;
+
+font-family: Roboto;
+font-size: 40px;
+font-weight: 450;
+line-height: 39px;
+letter-spacing: 0.02em;
+text-align: left;
+}
+.descr{
+  position: absolute;
+  width: 410px;
+height: 64px;
+top: 433px;
+left: 439px;
+
+font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.end{
+  position: absolute;
+  width: 217px;
+height: 32px;
+top: 674px;
+left: 557px;
+
+font-family: Roboto;
+font-size: 20px;
+font-weight: 350;
+line-height: 32px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+
+/* Add this to your CSS file */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 600px;
+height: 217px;
+/* top: 344px;
+left: 386px; */
+
+}
+
+.close-button {
+  position: absolute;
+  /* top: 100px; */
+  bottom: 20px;
+  right: 40px;
+  background: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+
+width: 124px;
+height: 28px;
+/* top: 607px;
+left: 945px; */
+background: #000000;
+color: white;
+border-radius: 11px;
+
+}
+
+.inp{
+  width: 250px;
+height: 31px;
+top: 439px;
+left: 641px;
+border-radius: 22px;
+border: 2px;
+border: 2px solid #CCCCCC;
+color: black;
+/* position: relative; */
+padding-left: 30px;
+
+}
+
+.two{
+  display: flex;
+  gap: 30px;
+}
+
+.All{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.colo{
+  display: flex;
+  gap: 13px;
+}
+
+.Title{
+  position: absolute;
+  width: 225.71px;
+height: 68.9px;
+/* background-color: red; */
+top: 11px;
+left: 44px;
+/* margin-top: 50px; */
+
+}
+.cir{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 44px;
+letter-spacing: 0.02em;
+text-align: center;
+margin-left: 20px;
+}
+.fd{
+  /* margin-left: 20px; */
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+  /* height: 500px; */
+  /* overflow: auto; */
+  
+}
+.fd :focus{
+  background-color: yellow;
+}
+.sidwindow{
+  position: absolute;
+  position: relative;
+  top: 120px;
+  left: 30px;
+   width: 355px;
+   height: 520px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   /* background-color: red; */
+}
+.sidwindow::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidwindow::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.sidwindow::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.val{
+  margin-top: 13px;
+}
+.selectedItem {
+  background-color: blue; /* Change 'blue' to the desired background color */
+  color: white; /* Change 'white' to the desired text color */
+  /* Add any other CSS rules you want for this class */
+}
+.bg{
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+}
+.NoteDetail{
+  height: 100vh;
+  width: 75%;
+  position: relative;
+  background: #E8E8E8;
+
+}
+
+.nav{
+  display: flex;
+  /* height: 40px; */
+  width: 100%;
+  /* width: 1078px */
+height: 48px;
+/* background: #E8E8E8; */
+/* left: 434px */
+
+}
+
+
+
+.text{
+  position: absolute;
+  width: 1040px;
+height: 180px;
+top: 0px;
+left: 48px;
+border-radius: 9px;
+border: 1px;
+background:linear-gradient(0deg, #FFFFFF, #FFFFFF);;
+border: 1px solid #CCCCCC;
+box-shadow: linear-gradient(0deg, #CCCCCC, #CCCCCC);
+padding-left: 20px;
+font-family: Roboto;
+font-size: 30px;
+
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0.02em;
+text-align: left;
+
+
+}
+
+.cir1{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align: center;
+}
+
+.selected {
+  display: flex;
+  width: 501px;
+height: 50px;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 20px;
+background: #F7ECDC;
+border-radius: 32px 0px 0px 32px;
+}
+
+.area{
+  position: relative;  
+}
+.arrow{
+  position: absolute;
+  cursor: pointer;
+  top: 150px;
+  right: 80px;
+  /* margin-top: 50px; */
+}
+
+.middle{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: #F7ECDC;
+  display: flex;
+  justify-content: center;
+}
+
+
+.date{
+  width: 15%;
+}
+.Your_Notes{
+  width: 75%;
+  font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.035em;
+text-align: left;
+}
+
+.wid{
+   position: absolute;
+  width: 1003px;
+  /* background-color: red; */
+  height: 420px;
+  top: 24px;
+  left: 80px;
+  font-family: Roboto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.035em;
+text-align: left;  
+}
+.wid::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.wid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.textInput{
+  display: flex;
+  width: 1003px;
+height: 141px;
+margin-bottom: 20px;
+
+gap: 20px;
+}
+
+.time{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.Cdate{
+  font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  };
+  .SideBar {
+    background-color: none;
+    position: relative;
+  }
+.DisplayBar{
+  display: none;
+}
+.pN{
+  position: absolute;
+  width: 197px;
+height: 37px;
+top: 10px;
+left: 144px;
+font-family: Roboto;
+font-size: 32px;
+font-weight: 500;
+line-height: 37px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.btn{
+  position: absolute;
+  width: 326px;
+height: 42px;
+top: 90px;
+left: 87px;
+
+border-radius: 37.32px;
+
+}
+.Title{
+  position: absolute;
+  /* display: none; */
+  width: 202.84px;
+height: 62.01px;
+top: 18px;
+left: 0px;
+
+}
+.All{
+  position: absolute;
+  position: relative;
+ 
+font-family: Roboto;
+font-size: 13px;
+font-weight: 500;
+line-height: 29px;
+letter-spacing: 0.035em;
+text-align: left;
+
+
+}
+.two{
+  position: absolute;
+  width: 137px;
+  height: 23px;
+  top: 72px;
+  left: 8px;
+  font-family: Roboto;
+font-size: 10px;
+font-weight: 500;
+line-height: 20px;
+/* letter-spacing: 0.035em; */
+text-align: left;
+
+  
+}
+.inp{
+  position: absolute;
+  width: 100px;
+height: 23px;
+top: 0px;
+left:103px;
+padding-right: 30px;
+border-radius: 9.72px;
+border: 0.88px;
+}
+.colo{
+  position: absolute;
+  width: 531px;
+height: 5px;
+top: 130px;
+left: 8px;
+font-size: 10px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+}
+.popup-overlay{
+  position: absolute;
+  width: 354px;
+height: 211px;
+top: 238px;
+left: 88px;
+border-radius: 8px;
+
+}
+.circleColor{
+  width: 10px;
+    height: 10px;
+}
+
+.responsive-class{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.nav{
+  width: 250px;
+height: 56px;
+}
+.SideBar1{
+display: none;
+}
+.middle{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: #F7ECDC;
+  display: flex;
+  justify-content: center;
+}
+.area{
+  position: absolute;
+  top: 524px;
+  left: 10px;
+}
+.text{
+  
+  position: relative;
+  width: 501px;
+  height: 152px;
+
+  border-radius: 6px;
+}
+.arrow{
+  position: absolute;
+  width: 21px;
+height: 17.68px;
+top: 129.74px;
+left: 530px;
+
+}
+.back{
+  width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+}
+.NoteDetail1{
+  display: none;
+}
+.backArrow{
+  position: absolute;
+  width: 15.58px;
+height: 11.15px;
+top: 17px;
+left: 19.58px;
+cursor: pointer;
+}
+.cir1{
+  position: absolute;
+  left: 25.58px;
+}
+.val{
+  position: absolute;
+  left: 100.58px;
+}
+.Your_Notes{
+  width: 300px;
+  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0.035em;
+text-align: left;
+}
+.textInput{
+  display: flex;
+  width: 483px;
+height: auto;
+gap: 10px; 
+/* background: rgb(226, 43, 55); */
+}
+.wid{
+  position: absolute;
+ width: 503px;
+ height: 410px;
+}
+.date{
+  width: 153px;
+}
+.selected{
+  
+background: none;
+border-radius: 32px 0px 0px 32px;
+}
+.sidwindow{
+  position: absolute;
+  position: relative;
+  top: 140px;
+  left: 130px;
+   width: 355px;
+   height: 520px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   /* background-color: red; */
+}
+.sidwindow::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidwindow::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.sidwindow::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+}
+.error-message{
+  color: red;
+  /* background-color: blue; */
+}
